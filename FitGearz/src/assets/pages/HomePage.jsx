@@ -25,12 +25,12 @@ function HomePage() {
     });
   };
 
-  // Remove from Cart
+
   const removeFromCart = (id) => {
     setCart((prevCart) => prevCart.filter((item) => item.id !== id));
   };
 
-  // Update Quantity
+ 
   const updateQuantity = (id, quantity) => {
     if (quantity <= 0) {
       removeFromCart(id);

@@ -6,7 +6,7 @@ function LoginPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // 🔑 Dummy validation
+    //  Dummy validation
     if (email && password) {
       alert(`Logged in as ${email}`);
     } else {

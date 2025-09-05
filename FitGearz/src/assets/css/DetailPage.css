@@ -61,7 +61,7 @@
 }
 .button-group {
   display: flex;
-  flex-wrap: wrap; /* allow stacking in small screen */
+  flex-wrap: wrap; 
   gap: 1rem;
 }
 button{

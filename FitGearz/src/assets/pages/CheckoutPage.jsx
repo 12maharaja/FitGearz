@@ -14,7 +14,7 @@ function CheckoutPage({ cart = [] }) {
   const [captchaInput, setCaptchaInput] = useState("");
 
   function generateCaptcha() {
-    return Math.random().toString(36).substring(2, 7).toUpperCase(); // random 5 letters
+    return Math.random().toString(36).substring(2, 7).toUpperCase(); 
   }
 
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -27,7 +27,7 @@ function CheckoutPage({ cart = [] }) {
     e.preventDefault();
     if (captchaInput !== captcha) {
       alert("❌ Invalid captcha, try again!");
-      setCaptcha(generateCaptcha()); // new captcha generate
+      setCaptcha(generateCaptcha()); 
       setCaptchaInput("");
       return;
     }
@@ -39,7 +39,6 @@ function CheckoutPage({ cart = [] }) {
       <div className="checkout-form">
         <h2>Checkout</h2>
         <form onSubmit={handleSubmit}>
-          {/* User Details */}
           <input
             type="text"
             name="name"
@@ -79,8 +78,6 @@ function CheckoutPage({ cart = [] }) {
             onChange={handleChange}
             required
           />
-
-          {/* Payment Options */}
           <h3>Payment Method</h3>
           <div className="payment-options">
             <label>
@@ -111,7 +108,6 @@ function CheckoutPage({ cart = [] }) {
         </form>
       </div>
 
-      {/* Order Summary */}
       <div className="checkout-summary">
         <h3>Order Summary</h3>
         {cart.length === 0 ? (

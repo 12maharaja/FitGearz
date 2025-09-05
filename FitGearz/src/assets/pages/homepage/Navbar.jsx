@@ -30,7 +30,7 @@ function Navbar() {
 
   const handleSelect = (id) => {
     setQuery("");
-    navigate(`/product/${id}`); // product details page redirect
+    navigate(`/product/${id}`); 
   };
 
   return (
@@ -52,7 +52,7 @@ function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          {/* 🔍 Search Bar */}
+      
           <div className="search-container">
             <input
               className="form-control search-input"
@@ -81,7 +81,7 @@ function Navbar() {
             )}
           </div>
 
-          {/* 🔗 Nav Links */}
+        
           <div className="collapse navbar-collapse" id="navbarScroll">
             <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
               <li className="nav-item">

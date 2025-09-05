@@ -4,8 +4,6 @@
   padding: 2rem;
   min-height: 80vh;
 }
-
-/* Left side: Items */
 .cart-items {
   flex: 2;
 }
@@ -45,8 +43,6 @@
   font-weight: bold;
   color: #e63946;
 }
-
-/* Quantity control */
 .quantity-control {
   display: flex;
   align-items: center;
@@ -67,8 +63,6 @@
 .quantity-control button:hover {
   background: #ddd;
 }
-
-/* Remove button */
 .remove-btn {
   background: transparent;
   border: none;
@@ -81,8 +75,6 @@
 .remove-btn:hover {
   text-decoration: underline;
 }
-
-/* Right side: Cart Summary */
 .cart-summary {
   flex: 1;
   border: 1px solid #ddd;

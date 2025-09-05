@@ -71,7 +71,6 @@ body{
   justify-content: space-between;
   margin-bottom: 10px;
 }
-/* Payment section layout */
 .checkout-form h3 {
   margin-top: 15px;
   margin-bottom: 8px;
@@ -79,7 +78,7 @@ body{
 
 .payment-options {
   display: flex;
-  gap: 20px; /* space between COD & Card */
+  gap: 20px; 
   align-items: center;
   margin-bottom: 15px;
 }
