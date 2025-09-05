@@ -2,7 +2,7 @@ import { StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import "./assets/css/ProductCards.css";
-import "./assets/css/CategoriesCards.css";
+import "./assets/css/CategoriesCards.css";``
 import "./assets/css/LoginPage.css";
 import "./assets/css/CartPage.css";
 import "./assets/css/Navbar.css";
