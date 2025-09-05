@@ -2,7 +2,8 @@ import { StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import "./assets/css/ProductCards.css";
-import "./assets/css/CategoriesCards.css";``
+import "./assets/css/CategoriesCards.css";
+``;
 import "./assets/css/LoginPage.css";
 import "./assets/css/CartPage.css";
 import "./assets/css/Navbar.css";
@@ -17,7 +18,6 @@ import CartPage from "./assets/pages/CartPage.jsx";
 import LoginPage from "./assets/pages/LoginPage.jsx";
 import SignupPage from "./assets/pages/SignupPage.jsx";
 import CheckoutPage from "./assets/pages/CheckoutPage.jsx";
-
 
 // ✅ App wrapper with Cart state
 function App() {
@@ -49,38 +49,43 @@ function App() {
     );
   };
 
-  const router = createBrowserRouter([
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/*",
+        element: <HomePage addToCart={addToCart} cartCount={cart.length} />,
+      },
+      {
+        path: "/product/:id",
+        element: <ProductDetailsPage addToCart={addToCart} />,
+      },
+      {
+        path: "/login",
+        element: <LoginPage />,
+      },
+      {
+        path: "/signup",
+        element: <SignupPage />,
+      },
+      {
+        path: "/checkout",
+        element: <CheckoutPage cart={cart} />,
+      },
+      {
+        path: "/cart",
+        element: (
+          <CartPage
+            cart={cart}
+            removeFromCart={removeFromCart}
+            updateQuantity={updateQuantity}
+          />
+        ),
+      },
+    ],
     {
-      path: "/*",
-      element: <HomePage addToCart={addToCart} cartCount={cart.length} />,
-    },
-    {
-      path: "/product/:id",
-      element: <ProductDetailsPage addToCart={addToCart} />,
-    },
-    {
-      path:"/login",
-      element:<LoginPage/>
-    },
-    {
-      path:"/signup",
-      element:<SignupPage/>
-    },
-    {
-      path:"/checkout",
-      element:<CheckoutPage cart={cart}/>
-    },
-    {
-      path: "/cart",
-      element: (
-        <CartPage
-          cart={cart}
-          removeFromCart={removeFromCart}
-          updateQuantity={updateQuantity}
-        />
-      ),
-    },
-  ]);
+      basename: "/FitGearz", // 👈 important for GitHub Pages
+    }
+  );
 
   return <RouterProvider router={router} />;
 }
