@@ -81,6 +81,10 @@ function App() {
           />
         ),
       },
+      {
+        path: "*", // 👈 catch-all (if URL not found → HomePage)
+        element: <HomePage addToCart={addToCart} cartCount={cart.length} />,
+      },
     ],
     {
       basename: "/FitGearz", // 👈 important for GitHub Pages
