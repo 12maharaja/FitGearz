@@ -1,8 +1,9 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import banner1 from "@/assets/images/ads/gym.jpeg";
-import banner2 from "@/assets/images/ads/sport.jpeg";
+import banner1 from "../../images/gym.jpeg";
+import banner2 from "../../images/sport.jpeg";
+
 
 
 
