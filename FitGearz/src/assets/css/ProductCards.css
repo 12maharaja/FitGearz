@@ -21,13 +21,13 @@
   margin-bottom: 10px;
   background-color: rgb(232, 222, 222);
 }
-@media (min-width: 367px) and  (max-width: 500px){
+@media (min-width: 367px) and (max-width: 500px) {
   .card {
     margin: 5px auto;
     padding: 8px;
     width: 183px;
     height: 300px;
-    margin: 8px;
+    margin: 11px;
   }
 
   .card img {
@@ -35,7 +35,7 @@
     width: 150px;
   }
   .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
 }
