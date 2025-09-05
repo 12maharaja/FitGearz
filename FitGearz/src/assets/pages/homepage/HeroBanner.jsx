@@ -1,29 +1,32 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import banner1 from "@/assets/images/ads/gym.jpeg";
+import banner2 from "@/assets/images/ads/sport.jpeg";
+
+
 
 function HeroBanner() {
   const settings = {
-    dots: true, // bottom dots show agum
-    infinite: true, // loop ah run aagum
-    speed: 500, // animation speed
-    slidesToShow: 1, // oru slide mattum time la
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true, // auto scroll agum
-    autoplaySpeed: 3000, // 3 sec ku oru slide
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
   return (
     <div className="hero-banner-wrapper">
       <Slider {...settings}>
         <div>
-          <img src="/ads/gym.jpeg" alt="Banner 1" className="banner-img" />
+          <img src={banner1} alt="Banner 1" className="banner-img" />
         </div>
         <div>
-          <img src="/ads/sport.jpeg" alt="Banner 2" className="banner-img" />
+          <img src={banner2} alt="Banner 2" className="banner-img" />
         </div>
       </Slider>
-      
     </div>
   );
 }
