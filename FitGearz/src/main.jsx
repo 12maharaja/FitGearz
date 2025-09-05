@@ -85,7 +85,7 @@ function App() {
   return <RouterProvider router={router} />;
 }
 
-createRoot(document.getElementById("root")).render(
+RactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
   </StrictMode>
