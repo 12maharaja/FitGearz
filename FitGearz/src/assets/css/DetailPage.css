@@ -67,7 +67,7 @@
 button{
     margin: 2px;
 }
-@media (min-width: 367px) and  (max-width: 500px){
+@media screen and (max-width: 400px){
   .pd-title {
   font-size: 25px;
   line-height: 1.2;
