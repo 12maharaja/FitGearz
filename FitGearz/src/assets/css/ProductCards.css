@@ -32,6 +32,7 @@
     padding: 8px;
     width: 183px;
     height: 300px;
+    margin: 10px;
   }
 
   .card img {
@@ -45,6 +46,7 @@
   .cate{
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 30px;
+  margin-top: 15px;
 }
 }
