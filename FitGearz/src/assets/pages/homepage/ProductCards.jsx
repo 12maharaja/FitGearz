@@ -9,7 +9,7 @@ function ProductCards({ id, name, description, image }) {
     >
       <div className="card">
         <img src={image} alt={name} />
-        <h4>{name}</h4>
+        <h4 id="name">{name}</h4>
         <p>{description}</p>
       </div>
     </Link>

@@ -21,18 +21,17 @@
   margin-bottom: 10px;
   background-color: rgb(232, 222, 222);
 }
-.cate{
+.cate {
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 50px;
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
   .card {
     margin: 2px auto;
     padding: 8px;
     width: 170px;
     height: 300px;
-    background-color:blue;
   }
 
   .card img {
@@ -43,20 +42,22 @@
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   }
-  .cate{
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 30px;
-  margin-top: 15px;
+  .cate {
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  #name {
+    font-size: 20px;
+  }
 }
-}
-@media(min-width:400px) and (max-width:600px){
-   .card {
+@media (min-width: 400px) and (max-width: 600px) {
+  .card {
     margin: 2px auto;
     padding: 8px;
     width: 187px;
     height: 300px;
-    background-color:red;
   }
   .card img {
     max-height: 150px;
