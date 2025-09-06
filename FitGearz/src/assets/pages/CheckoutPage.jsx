@@ -10,13 +10,6 @@ function CheckoutPage({ cart = [] }) {
     payment: "cod",
   });
 
-  const [captcha, setCaptcha] = useState(generateCaptcha());
-  const [captchaInput, setCaptchaInput] = useState("");
-
-  function generateCaptcha() {
-    return Math.random().toString(36).substring(2, 7).toUpperCase(); 
-  }
-
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   const handleChange = (e) => {
@@ -25,12 +18,6 @@ function CheckoutPage({ cart = [] }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (captchaInput !== captcha) {
-      alert("❌ Invalid captcha, try again!");
-      setCaptcha(generateCaptcha()); 
-      setCaptchaInput("");
-      return;
-    }
     alert("✅ Order placed successfully!\nThank you for shopping with us.");
   };
 
@@ -78,6 +65,7 @@ function CheckoutPage({ cart = [] }) {
             onChange={handleChange}
             required
           />
+
           <h3>Payment Method</h3>
           <div className="payment-options">
             <label>
