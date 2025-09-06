@@ -2,8 +2,6 @@ import { StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import "./assets/css/ProductCards.css";
-import "./assets/css/CategoriesCards.css";
-``;
 import "./assets/css/LoginPage.css";
 import "./assets/css/CartPage.css";
 import "./assets/css/Navbar.css";
@@ -19,7 +17,7 @@ import LoginPage from "./assets/pages/LoginPage.jsx";
 import SignupPage from "./assets/pages/SignupPage.jsx";
 import CheckoutPage from "./assets/pages/CheckoutPage.jsx";
 
-// ✅ App wrapper with Cart state
+// App wrapper with Cart state
 function App() {
   const [cart, setCart] = useState([]);
 
@@ -82,12 +80,12 @@ function App() {
         ),
       },
       {
-        path: "*", // 👈 catch-all (if URL not found → HomePage)
+        path: "*", // catch-all (if URL not found → HomePage)
         element: <HomePage addToCart={addToCart} cartCount={cart.length} />,
       },
     ],
     {
-      basename: "/FitGearz", // 👈 important for GitHub Pages
+      basename: "/FitGearz", // important for GitHub Pages
     }
   );
 

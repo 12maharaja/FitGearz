@@ -21,7 +21,12 @@
   margin-bottom: 10px;
   background-color: rgb(232, 222, 222);
 }
-@media (max-width: 576px) {
+.cate{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+}
+@media screen and (max-width:576px) {
   .card {
     margin: 5px auto;
     padding: 8px;

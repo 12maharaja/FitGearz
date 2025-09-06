@@ -3,7 +3,6 @@ import Navbar from "./homepage/Navbar";
 import ProductList from "./ProductList";
 import HeroBanner from "./homepage/HeroBanner";
 import Footer from "./homepage/Footer";
-import CategoriesList from "./homepage/CategoriesList";
 import CartPage from "./CartPage";
 import { Routes, Route } from "react-router-dom";
 
@@ -51,8 +50,6 @@ function HomePage() {
           element={
             <>
               <HeroBanner />
-              <h1 className="cate">Categories</h1>
-              <CategoriesList />
               <h3 className="cate">Products</h3>
               <ProductList addToCart={addToCart} />
               <Footer />
