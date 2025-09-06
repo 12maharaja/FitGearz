@@ -21,13 +21,12 @@
   margin-bottom: 10px;
   background-color: rgb(232, 222, 222);
 }
-@media (min-width: 367px) and (max-width: 500px) {
+@media (max-width: 576px) {
   .card {
     margin: 5px auto;
     padding: 8px;
     width: 183px;
     height: 300px;
-    margin: 20px;
   }
 
   .card img {
