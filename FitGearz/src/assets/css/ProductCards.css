@@ -28,11 +28,11 @@
 }
 @media screen and (max-width:400px) {
   .card {
-    margin: 5px auto;
+    margin: 2px auto;
     padding: 8px;
-    width: 183px;
+    width: 170px;
     height: 300px;
-    margin: 6px;
+    background-color:blue;
   }
 
   .card img {
