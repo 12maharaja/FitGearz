@@ -26,7 +26,7 @@ function ProductList() {
     { id: 4, name: "Volley Ball", price: "299.Rs", image: vball,description: "Official size volleyball for matches and premium..." },
     { id: 5, name: "Cricket Helmet", price: "299.Rs", image: chelmet,description: "MASURI Protective helmet for cricket players..." },
     { id: 6, name: "Dumbbell", price: "299.Rs", image: dumble20,description: "20kg metal dumbbell for weight training with crip." },
-    { id: 7, name: "Barbell", price: "299.Rs", image: barble,description: "Sturdy barbell for heavy lifts with metal plates." },
+    { id: 7, name: "Barbell", price: "299.Rs", image: barble,description: "Sturdy barbell for heavy lifts with metal plates and quality." },
     { id: 8, name: "Treadmill", price: "299.Rs", image: treadmill,description: "Electric treadmill for home gym with multiple ..." },
     { id: 9, name: "Gym Bench", price: "299.Rs", image: bench,description: "Adjustable gym bench for workouts, quality and very..." },
     { id: 10, name: "Gym Set", price: "299.Rs", image: gset,description: "Complete home gym setup with good quality products." },
